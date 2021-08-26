@@ -23,13 +23,13 @@ class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
 
-    void shouldRemainIfAmount1000() {
+    void shouldRemain0IfAmount1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
 
         int actual = service.remain(amount);
-        int expected = 1000;
+        int expected = 0;
         assertEquals(actual, expected);
     }
 
