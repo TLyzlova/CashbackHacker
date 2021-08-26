@@ -4,7 +4,7 @@
 name: Java CI with Gradle
 
 on:
-    branches: [ testng, junit4 ]
+    branches: [ main, testng, junit4 ]
     pull_request:
     branches: [ main ]
 
