@@ -17,5 +17,4 @@ class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-
 }
