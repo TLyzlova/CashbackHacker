@@ -18,8 +18,6 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
 
-
-
     @Test
 
     void shouldRemain0IfAmount1000() {
@@ -55,7 +53,6 @@ public class CashbackHackServiceTest {
         int expected = 1800;
         assertEquals(actual, expected);
     }
-
 
     @Test
 
