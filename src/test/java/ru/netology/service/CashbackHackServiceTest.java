@@ -6,10 +6,9 @@ import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
+    @org.junit.Test
 
-    @Test
-
-    void shouldRemainIfAmountBelow1000() {
+    public void shouldRemainIfAmountBelow1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
@@ -19,11 +18,9 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
+    @org.junit.Test
 
-
-    @Test
-
-    void shouldRemain0IfAmount1000() {
+    public void shouldRemain0IfAmount1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
@@ -33,9 +30,9 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
 
-    void shouldRemainIfAmountOver1000() {
+    public void shouldRemainIfAmountOver1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1100;
@@ -45,9 +42,9 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
 
-    void shouldRemainIfAmountMinus() {
+    public void shouldRemainIfAmountMinus() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = -800;
@@ -57,20 +54,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-
-    @Test
-
-    void shouldRemainIfAmount0() {
-
-        CashbackHackService service = new CashbackHackService();
-        int amount = 0;
-
-        int actual = service.remain(amount);
-        int expected = 1000;
-        assertEquals(actual, expected);
-    }
-
-    @Test
+    @org.junit.Test
 
     public void shouldRemainIfAmount0() {
 
@@ -79,7 +63,7 @@ public class CashbackHackServiceTest {
 
         int actual = service.remain(amount);
         int expected = 1000;
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
 }
