@@ -1,17 +1,12 @@
 package ru.netology.service;
 
-//import org.junit.jupiter.api.Test;
-//
-//import static org.junit.jupiter.api.Assertions.*;
-import org.testng.annotations.Test;
-
 import static org.testng.AssertJUnit.assertEquals;
 
-class CashbackHackServiceTest {
+public class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
 
-    void shouldRemainIfAmountBelow1000() {
+    public void shouldRemainIfAmountBelow1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
@@ -23,7 +18,7 @@ class CashbackHackServiceTest {
 
     @org.testng.annotations.Test
 
-    void shouldRemain0IfAmount1000() {
+    public void shouldRemain0IfAmount1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
@@ -34,7 +29,8 @@ class CashbackHackServiceTest {
     }
 
     @org.testng.annotations.Test
-    void shouldRemainIfAmountOver1000() {
+
+    public void shouldRemainIfAmountOver1000() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1100;
@@ -45,7 +41,8 @@ class CashbackHackServiceTest {
     }
 
     @org.testng.annotations.Test
-    void shouldRemainIfAmountMinus() {
+
+    public void shouldRemainIfAmountMinus() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = -800;
@@ -56,7 +53,8 @@ class CashbackHackServiceTest {
     }
 
     @org.testng.annotations.Test
-    void shouldRemainIfAmount0() {
+
+    public void shouldRemainIfAmount0() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 0;
